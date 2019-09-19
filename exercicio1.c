@@ -3,27 +3,7 @@
 
 
 int main(int argc, char * arg[]) {
-
-  int num;
-
-  while (num != 10) {
-    printf("\n MENU ");
-    printf("\n Escolha uma opcao");
-    printf("\n 1 - Opcao 1 ");
-    printf("\n 2 - Opcao 2 ");
-    printf("\n 3 - Opcao 3 ");
-    printf("\n 4 - Opcao 4 ");
-    printf("\n 5 - Opcao 5 ");
-    printf("\n 6 - Opcao 6 ");
-    printf("\n 7 - Opcao 7 ");
-    printf("\n 8 - Opcao 8 ");
-    printf("\n 9 - Opcao 9 ");
-    printf("\n 0 - Fechar o programa ");
-    printf("\n\n Escolha um numero: ");
-    scanf("%d", & num);
-
-    switch (num) {
-    case 1:
+  
       int opcao;
       // se o numero for diferente de 10, ele vai continuar
       // escolha e igual a 1
@@ -41,6 +21,7 @@ int main(int argc, char * arg[]) {
         printf("\n 0 - Fechar o programa ");
         printf("\n\n Escolha um numero: ");
         scanf("%d", & opcao);
+       }
 
         switch (opcao) {
         case 1:
@@ -77,30 +58,6 @@ int main(int argc, char * arg[]) {
           printf("\n\n Numero invalido ");
           break;
         }
-        case 2:
 
-          int i, n;
-        int divisao = 0;
-
-        do {
-          printf("Digite um numero para ver se e primo: ");
-          scanf("%d", & n);
-          if (n <= 0) printf("numero invalido digite um numero positivo\n");
-        } while (n <= 0);
-
-        for (i = 1; i <= n && divisao == 0; i++) {
-          if (n % i == 0) {
-            divisao++;
-          }
-        }
-        if (divisao == 0) {
-          printf("%d é um numero primo\n", n);
-        } else {
-          printf("%d nao e um numero primo ", n);
-        }
-
-        
-      }
-    }
-  }
- return 0;}
+ return 0;
+}
