@@ -146,16 +146,59 @@ int main() {
             case 7: {
                 system("cls");
                 break;
-            }
-            break;
+                int f1, f2;
+					int j, n, auxiliar;
+	
+				    f1 = 0;
+				    f2 = 1;
+					
+					printf("<PROGRAMA FIBONACCI>\n");
+				    printf("\nQUANTIDADE DE TERMOS DA SEQUENCIA: ");scanf("%d", &n);
+				    printf("SEQUENCIA DE FIBONACCI: ");
+				    printf("%d %d ", f1,f2);
+				
+				    for(j = 0; j < n; j++) {
+				        auxiliar = f1 + f2;
+				        f1 = f2;
+				        f2 = auxiliar;
+				
+				        printf("%d ", auxiliar);
+				    }
+				    printf("\nINFORME UM NUMERO DO MENU: ");scanf("%d", &opcao);
+            
+            break;}
         case 8: {
             system("cls");
-            break;
-        }
-
-        break;
+            double a1, a2;
+					double media;
+					
+					printf("<PROGRAMA NOTAS ALUNO>\n");
+					printf("\nPRIMEIRA NOTA: ");scanf("%lf", &a1);
+					
+					if(a1 >= 0.0 && a1 <= 10.0 ){
+						printf("SEGUNDA NOTA: ");scanf("%lf", &a2);
+							if(a2 >= 0.0 && a2 <= 10.0){
+							media = (a1 + a2)/2;
+							printf("MEDIA IGUAL A %.2lf\n", media);
+							}else{
+								printf("NOTA INVALIDA!!\n");
+							}		
+					}else{
+						printf("NOTA INVALIDA!!\n");
+					}
+					printf("\nINFORME UM NUMERO DO MENU: ");scanf("%d", &opcao);
+        break;}
         case 9: {
             system("cls");
+					int fat,nume;
+					
+					printf("<PROGRAMA FATORIAL>\n");
+					printf("\nNUMERO: ");scanf("%d", &nume);
+					for(fat = 1; nume > 1; nume = nume - 1){
+					fat = fat * nume;
+					}
+					printf("FATORIAL E %d\n", fat);
+					printf("\nINFORME UM NUMERO DO MENU: ");scanf("%d", &opcao);
             break;
         }
 
